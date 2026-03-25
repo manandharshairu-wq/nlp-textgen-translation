@@ -1,0 +1,174 @@
+{
+  "task_1_text_generation": {
+    "LSTM_onehot": {
+      "test_loss": 5.769596394582011,
+      "test_perplexity": 320.40838798564886,
+      "samples": [
+        "to be or not to be <unk> 'd , and <unk> 'd , and <unk> , and <unk> , and <unk> , and <unk> , and <unk> , and <unk> ,",
+        "the king hath been 'd , and the <unk> of the <unk> of the <unk> , and the <unk> of the <unk> of the <unk> , and <unk>"
+      ],
+      "history": {
+        "train_loss": [
+          6.030953843415494,
+          5.377096601798709,
+          5.30011736126868,
+          4.893391125170749,
+          4.668362046814683
+        ],
+        "val_loss": [
+          5.712211994669545,
+          5.415159122428703,
+          5.326648405448875,
+          5.272053234541237,
+          5.296424670435076
+        ],
+        "val_ppl": [
+          302.5395445371105,
+          224.7883116950535,
+          205.7472359507827,
+          194.81555410216725,
+          199.62181878136568
+        ]
+      }
+    },
+    "LSTM_glove": {
+      "test_loss": 5.689055727953887,
+      "test_perplexity": 295.61434844110664,
+      "samples": [
+        "to be or not to be a <unk> , and <unk> , and <unk> , and <unk> , and <unk> , and <unk> , and <unk> , and <unk> , and",
+        "the king hath <unk> 'd the <unk> of the <unk> , and <unk> 'd , and <unk> 'd , and <unk> , and <unk> , and <unk> ,"
+      ],
+      "history": {
+        "train_loss": [
+          5.748271426986915,
+          5.140017487309821,
+          4.90246768784987,
+          4.7169207089813865,
+          4.546106685278031
+        ],
+        "val_loss": [
+          5.426130196556973,
+          5.28087798315077,
+          5.223802969084313,
+          5.214631000355859,
+          5.268266126738122
+        ],
+        "val_ppl": [
+          227.26805879773332,
+          196.5423605021238,
+          185.63882206435,
+          183.94393320923925,
+          194.07916187555517
+        ]
+      }
+    }
+  },
+  "task_2_machine_translation": {
+    "GRU_onehot": {
+      "test_loss": 5.779059737920761,
+      "bleu": 5.886578180767915,
+      "examples": [
+        {
+          "source": "at every flash of lightning not only the <unk> way but even the bright stars vanished ; but",
+          "prediction": "el <unk> de la <unk> , <unk> , <unk> , <unk> , <unk> , <unk> <unk> , <unk>",
+          "reference": "cada vez que brillaba un rel\u00e1mpago , no s\u00f3lo la v\u00eda <unk> sino las brillantes estrellas desaparec\u00edan ,"
+        },
+        {
+          "source": "`` some lackey , '' murmured d \u2019 artagnan .",
+          "prediction": "<unk> , , y <unk> .",
+          "reference": "alg\u00fan lacayo murmur\u00f3 d'artagnan ."
+        },
+        {
+          "source": "`` at length he <unk> me ! '' said milady to herself , at the height of joy",
+          "prediction": "<unk> , <unk> , <unk> , <unk> , <unk> , <unk> , <unk> <unk> , y <unk> <unk>",
+          "reference": "\u00ab por fin me pregunta \u00bb , se dijo a s\u00ed misma milady en el colmo de la"
+        },
+        {
+          "source": "' i will tell him everything , i will get him to tell me everything .",
+          "prediction": "<unk> que no <unk> , pero no me <unk> a <unk> .",
+          "reference": "por otra parte , su hermano siempre hab\u00eda querido ser bueno ."
+        },
+        {
+          "source": "moreover by what i am about to say to thee thou wilt be led to see the great",
+          "prediction": "no , que , que , que , que , que , que <unk> , <unk> , y",
+          "reference": "cuanto m\u00e1s que , con lo que ahora pienso decirte , <unk> de venir en conocimiento del grande"
+        }
+      ],
+      "history": {
+        "train_loss": [
+          5.971458203495501,
+          5.381005974242481,
+          5.136822421710712,
+          4.993194779648948,
+          4.8707801648222215,
+          4.762911479694013,
+          4.640722233647356,
+          4.53537856123318
+        ],
+        "val_loss": [
+          5.853525847196579,
+          5.744650572538376,
+          5.873453870415688,
+          5.775571644306183,
+          5.71136149764061,
+          5.745397940278053,
+          5.738227561116219,
+          5.750067636370659
+        ]
+      }
+    },
+    "GRU_glove": {
+      "test_loss": 5.641741946339607,
+      "bleu": 7.468240331576508,
+      "examples": [
+        {
+          "source": "at every flash of lightning not only the <unk> way but even the bright stars vanished ; but",
+          "prediction": "a las <unk> de <unk> no <unk> <unk> , <unk> , <unk> , <unk> , <unk> , no",
+          "reference": "cada vez que brillaba un rel\u00e1mpago , no s\u00f3lo la v\u00eda <unk> sino las brillantes estrellas desaparec\u00edan ,"
+        },
+        {
+          "source": "`` some lackey , '' murmured d \u2019 artagnan .",
+          "prediction": "<unk> ! dijo d'artagnan .",
+          "reference": "alg\u00fan lacayo murmur\u00f3 d'artagnan ."
+        },
+        {
+          "source": "`` at length he <unk> me ! '' said milady to herself , at the height of joy",
+          "prediction": "<unk> <unk> de <unk> , , <unk> , , <unk> , <unk> , <unk> , <unk> .",
+          "reference": "\u00ab por fin me pregunta \u00bb , se dijo a s\u00ed misma milady en el colmo de la"
+        },
+        {
+          "source": "' i will tell him everything , i will get him to tell me everything .",
+          "prediction": "<unk> que yo le <unk> que <unk> a la que me <unk> .",
+          "reference": "por otra parte , su hermano siempre hab\u00eda querido ser bueno ."
+        },
+        {
+          "source": "moreover by what i am about to say to thee thou wilt be led to see the great",
+          "prediction": "y , , que , que , que , que , que , que , que , que <unk>",
+          "reference": "cuanto m\u00e1s que , con lo que ahora pienso decirte , <unk> de venir en conocimiento del grande"
+        }
+      ],
+      "history": {
+        "train_loss": [
+          5.924782670724887,
+          5.292431007178066,
+          5.020789062634063,
+          4.807344576802117,
+          4.615065867146745,
+          4.455385694107689,
+          4.299998040397327,
+          4.160911541015576
+        ],
+        "val_loss": [
+          5.722771644592285,
+          5.677434131503105,
+          5.571282744407654,
+          5.659420669078827,
+          5.56800951063633,
+          5.582770079374313,
+          5.592747136950493,
+          5.611164823174477
+        ]
+      }
+    }
+  }
+}

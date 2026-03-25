@@ -1,0 +1,9 @@
+torch
+datasets
+gensim
+nltk
+matplotlib
+numpy
+pandas
+sacrebleu
+requests
